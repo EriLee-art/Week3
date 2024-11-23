@@ -4,8 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
+
+    <!--Navbar-->
+	<nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
+		
+		<div class="container-fluid">
+		  	<a class="navbar-brand" href="index.html">BillyBean Hot Dogs</a>
+		  	
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		  	</button>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  	<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+				  	</li>
+				  	<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+			  		</li>
+				</ul>
+			
+				<form class="d-flex" role="search">
+		  			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+		  			<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
+		</div>
+	
+	</nav>
+
+    <!--Table-->
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Menu Item</th>
+                <th scope="col">Cost</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Classic Hot Dog</td>
+                <td>$7.99</td>
+                <td>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Robin Dog</td>
+                <td>$9.99</td>
+                <td>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>The Supreme</td>
+                <td>$11.99</td>
+                <td>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                <td>Jaw Opener</td>
+                <td>$11.99</td>
+                <td>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Saucy Jack*</td>
+                <td>$19.99</td>
+                <td>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">6</th>
+                <td>Vegan Dog</td>
+                <td>$24.99</td>
+                <td>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">7</th>
+                <td>Smokey Dokey</td>
+                <td>$14.99</td>
+                <td>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">8</th>
+                <td>Death Waiver Challenge**</td>
+                <td>Free</td>
+                <td>
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     
 </body>
 </html>
