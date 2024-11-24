@@ -15,57 +15,226 @@
 </head>
 <body>
 
-	<!--Navbar-->
+	<!-- NAVBAR -->
 
+	<!--This creates the navbar as seen on both the index and menu pages-->
 	<nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
 		
 		<div class="container-fluid">
 		  	<a class="navbar-brand" href="index.html">BillyBean Hot Dogs</a>
 		  	
+			<!--This part enables the navbar to collapse through a toggle which then can be accessed through a button that opens a dropdown list-->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 		  	</button>
 			
+			<!--When collapsed, these elements become list items to be toggled through a button-->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				  	<li class="nav-item">
+
+						<!--On the index page, this Home text is identified as an "active" class. On the Menu, it switches to Menu being the "active" class-->
 						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
 				  	</li>
 				  	<li class="nav-item">
 						<a class="nav-link" href="menu.html">Menu</a>
 			  		</li>
 				</ul>
-			
-				<form class="d-flex" role="search">
-		  			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-		  			<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
 			</div>
 		</div>
-	
 	</nav>
 
-	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+	<!-- HERO IMAGE -->
 
-	<!--Hero Image-->
-
-	<div class="img-fluid">
-		<img src="images/hot-dog.png" alt="Hot dogs on a Grill">
+	<!--This is the image that people see at the top of the webpage before the navigation-->
+	<!--The image scales up the larger the browser area is through "img-fluid", all images outside of Cards do the same-->
+	<div class="bg-dark text-center">
+		<img src="images/hot-dogs-on-a-grill.png" class="img-fluid" alt="Hot dogs on a Grill">
 	</div>
 
-	<!--Welcome-->
+	<!-- WELCOME -->
 
+	<!--This is the Heading of the webpage-->
 	<h1 class="text-center p-3">BillyBean brings Hot Dogs into your Area</h1>
 
-	<!--Cards-->
+	<p class="text-center fs-5">Ready for some real dogs to ROCK YOUR WORLD??</p>
 
-	<!--Contact Form-->
-	<form class="form">
+	<div class="text-center">
+		<img src="images/man-eating-a-hotdog.png" class="img-fluid" alt="man-eating-a-hotdog">
+	</div>
+
+	<h2 class="text-center pt-5">Here's just a small taste of what we offer!</h2>
+
+	<!-- CARDS -->
+
+	<!--This creates a container for the cards-->
+	<div class="container">
+		
+		<!--The cards are given a row with three row columns which will collapse back down to only one row column when smaller than the large size.-->
+		<div class="row row-cols-1 row-cols-lg-3 g-5 m-3">
+			  
+			<div class="col">
+
+				<!--The cards are given a shadow while the h-100 makes the cards the same size no matter what-->
+				<div class="card h-100 shadow-lg">
+					<img src="images/hot-dog.png" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Classic Hotdog</h5>
+						<p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium odio quo quibusdam amet expedita autem quidem ad eum, quod blanditiis tenetur? Sed quos, obcaecati nostrum molestiae deserunt eum? Tempore, ratione.</p>
+						
+						<!--Every card is given a button that links to the Menu page-->
+						<a href="menu.html" class="btn btn-primary">See the Menu</a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col">
+				
+				<div class="card h-100 shadow-lg">
+					<img src="images/smokey hotdog.png" class="card-img-top" alt="Smokey Dokey Hot Dog menu item">
+					<div class="card-body">
+						<h5 class="card-title">Smokey Dokey</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, perferendis. Laudantium quisquam expedita sit consequatur cum rerum omnis provident voluptas natus rem? A odio distinctio obcaecati libero iste facere deserunt.</p>
+						<a href="menu.html" class="btn btn-primary">See the Menu</a>
+					</div>
+				</div>
+				
+			</div>
+			<div class="col">
+				
+				<div class="card h-100 shadow-lg">
+					<img src="images/Supreme-Hotdog.png" class="card-img-top" alt="Supreme Hot dog menu item">
+					<div class="card-body">
+						<h5 class="card-title">The Supreme</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem velit molestiae, praesentium rerum, culpa, officia facilis laborum tempore ad asperiores at ipsa nobis dolor adipisci cumque saepe qui facere corrupti.</p>
+						<a href="menu.html" class="btn btn-primary">See the Menu</a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
 	
-	</form>
+	<!-- CONTACT FORM -->
 
-	<!--Footer-->
+	<div class="container">
+		<div class="text-center pt-5">
+			<h1>Contact Us</h1>
+			<h2>Get information about our amazing hot dogs!</h2>
+		</div>
 
+		<!--The form contains 2 rows with multiple columns that will collapse into new rows when the page is made smaller-->
+		<form class="row g-3 m-5">
+
+			<!--This portion collapses when the page is smaller than medium size-->
+			<div class="col-md-6">
+				<label for="firstname" class="form-label">First Name</label>
+				<input type="text" class="form-control" aria-label="First name">
+			</div>
+			<div class="col-md-6">
+				<label for="lastname" class="form-label">Last Name</label>
+				<input type="text" class="form-control" aria-label="Last name">
+			</div>
+
+			<div class="col-12">
+				<label for="inputEmail4" class="form-label">Email</label>
+				<input type="email" class="form-control" id="inputEmail4">
+			</div>
+			<div class="col-12">
+				<label for="inputAddress" class="form-label">Address</label>
+				<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+			</div>
+			<div class="col-12">
+				<label for="inputAddress2" class="form-label">Address 2</label>
+				<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+			</div>
+
+			<!--The next three divs collapse when the page is smaller than medium size-->
+			<div class="col-md-6">
+				<label for="inputCity" class="form-label">City</label>
+				<input type="text" class="form-control" id="inputCity">
+			</div>
+
+			<!--This creates a selection that allows for any option to be chosen from. I added all 50 US States-->
+			<div class="col-md-4">
+				<label for="inputState" class="form-label">State</label>
+				<select id="inputState" class="form-select">
+				<option selected>Choose...</option>
+				<option>Alabama</option>
+				<option>Alaska</option>
+				<option>Arizona</option>
+				<option>Arkansas</option>
+				<option>California</option>
+				<option>Colorado</option>
+				<option>Connecticut</option>
+				<option>Delaware</option>
+				<option>Florida</option>
+				<option>Georgia</option>
+				<option>Hawaii</option>
+				<option>Idaho</option>
+				<option>Illinois</option>
+				<option>Indiana</option>
+				<option>Iowa</option>
+				<option>Kansas</option>
+				<option>Kentucky</option>
+				<option>Louisiana</option>
+				<option>Maine</option>
+				<option>Maryland</option>
+				<option>Massachusetts</option>
+				<option>Michigan</option>
+				<option>Minnesota</option>
+				<option>Mississippi</option>
+				<option>Missouri</option>
+				<option>Montana</option>
+				<option>Nebraska</option>
+				<option>Nevada</option>
+				<option>New Hampshire</option>
+				<option>New Jersey</option>
+				<option>New Mexico</option>
+				<option>New York</option>
+				<option>North Carolina</option>
+				<option>North Dakota</option>
+				<option>Ohio</option>
+				<option>Oklahoma</option>
+				<option>Oregon</option>
+				<option>Pennsylvania</option>
+				<option>Rhode Island</option>
+				<option>South Carolina</option>
+				<option>South Dakota</option>
+				<option>Tennessee</option>
+				<option>Texas</option>
+				<option>Utah</option>
+				<option>Vermont</option>
+				<option>Virginia</option>
+				<option>Washington</option>
+				<option>West Virginia</option>
+				<option>Wisconsin</option>
+				<option>Wyoming</option>
+				</select>
+			</div>
+			<div class="col-md-2">
+				<label for="inputZip" class="form-label">Zip</label>
+				<input type="text" class="form-control" id="inputZip">
+			</div>
+
+			<div class="col-12 text-center">
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		</form>
+	</div>
+	
+
+	<!-- FOOTER -->
+
+	<footer class="pt-5">
+		<div class="text-center pb-5 pt-5">
+			<h5>BillyBean Restaurants copyrighted 2024</h5>
+		</div>
+	</footer>
+
+
+	<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
 </body>
 </html>

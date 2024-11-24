@@ -8,111 +8,244 @@
 </head>
 <body>
 
-    <!--Navbar-->
+    <!-- NAVBAR -->
+	
+    <!--This creates the navbar as seen on both the index and menu pages-->
 	<nav class="navbar navbar-expand-md bg-dark" data-bs-theme="dark">
 		
 		<div class="container-fluid">
 		  	<a class="navbar-brand" href="index.html">BillyBean Hot Dogs</a>
 		  	
+			<!--This part enables the navbar to collapse through a toggle which then can be accessed through a button that opens a dropdown list-->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 		  	</button>
 			
+			<!--When collapsed, these elements become list items to be toggled through a button-->
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				  	<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
+
+						<!--On the index page, this Home text is identified as an "active" class. On the Menu, it switches to Menu being the "active" class-->
+						<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
 				  	</li>
 				  	<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="menu.html">Menu</a>
+						<a class="nav-link" href="menu.html">Menu</a>
 			  		</li>
 				</ul>
-			
-				<form class="d-flex" role="search">
-		  			<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-		  			<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
 			</div>
 		</div>
 	
 	</nav>
 
-    <!--Table-->
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col"></th>
-                <th scope="col">Menu Item</th>
-                <th scope="col">Cost</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Classic Hot Dog</td>
-                <td>$7.99</td>
-                <td>
-                    <button type="button" class="btn btn-dark">Add to Cart</button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Robin Dog</td>
-                <td>$9.99</td>
-                <td>
-                    <button type="button" class="btn btn-dark">Add to Cart</button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>The Supreme</td>
-                <td>$11.99</td>
-                <td>
-                    <button type="button" class="btn btn-dark">Add to Cart</button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">4</th>
-                <td>Jaw Opener</td>
-                <td>$11.99</td>
-                <td>
-                    <button type="button" class="btn btn-dark">Add to Cart</button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">5</th>
-                <td>Saucy Jack*</td>
-                <td>$19.99</td>
-                <td>
-                    <button type="button" class="btn btn-dark">Add to Cart</button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">6</th>
-                <td>Vegan Dog</td>
-                <td>$24.99</td>
-                <td>
-                    <button type="button" class="btn btn-dark">Add to Cart</button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">7</th>
-                <td>Smokey Dokey</td>
-                <td>$14.99</td>
-                <td>
-                    <button type="button" class="btn btn-dark">Add to Cart</button>
-                </td>
-            </tr>
-            <tr>
-                <th scope="row">8</th>
-                <td>Death Waiver Challenge**</td>
-                <td>Free</td>
-                <td>
-                    <button type="button" class="btn btn-dark">Add to Cart</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- HEADER -->
+
+    <h1 class="text-center m-5">MENU</h1>
+
+    <!-- TABLE -->
+
+    <!--This creates the Table for the Menu-->
+    <!--The table is placed inside a container and given a border around it-->
+    <div class="container border">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Menu Item</th>
+                    <th scope="col">Cost</th>
+                </tr>
+            </thead>
+
+            <!--All menu items are given a button to press to add the item to the cart-->
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Classic Hot Dog</td>
+                    <td>$7.99</td>
+                    <td class="text-end">
+                        <button type="button" class="btn btn-dark">Add to Cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Robin Dog</td>
+                    <td>$9.99</td>
+                    <td class="text-end">
+                        <button type="button" class="btn btn-dark">Add to Cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>The Supreme</td>
+                    <td>$11.99</td>
+                    <td class="text-end">
+                        <button type="button" class="btn btn-dark">Add to Cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>Jaw Opener</td>
+                    <td>$11.99</td>
+                    <td class="text-end">
+                        <button type="button" class="btn btn-dark">Add to Cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>Saucy Jack*</td>
+                    <td>$19.99</td>
+                    <td class="text-end">
+                        <button type="button" class="btn btn-dark">Add to Cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>Vegan Dog</td>
+                    <td>$24.99</td>
+                    <td class="text-end">
+                        <button type="button" class="btn btn-dark">Add to Cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Smokey Dokey</td>
+                    <td>$14.99</td>
+                    <td class="text-end">
+                        <button type="button" class="btn btn-dark">Add to Cart</button>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>Death Waiver Challenge**</td>
+                    <td>Free</td>
+                    <td class="text-end">
+                        <button type="button" class="btn btn-dark">Add to Cart</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!--This div clarifies what the menu items with * has on top of being the menu item-->
+    <div class="container text-center">
+        <p>* Saucy Jack comes with a choice of Ketchup, BBQ Sauce, and Buffalo Sauce</p>
+        <p>** Death Waiver Challenge is an all you can eat hotdog, we are not responsible for any adverse affects this challenge may or may not incur</p>
+    </div>
     
+	<!-- CONTACT FORM -->
+
+	<div class="text-center pt-5">
+		<h1>Contact Us</h1>
+		<h2>Get more information about our amazing hot dogs!</h2>
+	</div>
+
+    <!--The form contains 2 rows with multiple columns that will collapse into new rows when the page is made smaller-->
+	<form class="row g-3 m-5">
+
+        <!--This portion collapses when the page is smaller than medium size-->
+		<div class="col-md-6">
+			<label for="firstname" class="form-label">First Name</label>
+			<input type="text" class="form-control" aria-label="First name">
+		</div>
+		<div class="col-md-6">
+			<label for="lastname" class="form-label">Last Name</label>
+			<input type="text" class="form-control" aria-label="Last name">
+		</div>
+
+		<div class="col-12">
+			<label for="inputEmail4" class="form-label">Email</label>
+			<input type="email" class="form-control" id="inputEmail4">
+		</div>
+		<div class="col-12">
+			<label for="inputAddress" class="form-label">Address</label>
+			<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+		</div>
+		<div class="col-12">
+			<label for="inputAddress2" class="form-label">Address 2</label>
+			<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+		</div>
+
+        <!--This portion collapses when the page is smaller than medium size-->
+		<div class="col-md-6">
+			<label for="inputCity" class="form-label">City</label>
+			<input type="text" class="form-control" id="inputCity">
+		</div>
+		<div class="col-md-4">
+			<label for="inputState" class="form-label">State</label>
+			<select id="inputState" class="form-select">
+			<option selected>Choose...</option>
+			<option>Alabama</option>
+			<option>Alaska</option>
+			<option>Arizona</option>
+			<option>Arkansas</option>
+			<option>California</option>
+			<option>Colorado</option>
+			<option>Connecticut</option>
+			<option>Delaware</option>
+			<option>Florida</option>
+			<option>Georgia</option>
+			<option>Hawaii</option>
+			<option>Idaho</option>
+			<option>Illinois</option>
+			<option>Indiana</option>
+			<option>Iowa</option>
+			<option>Kansas</option>
+			<option>Kentucky</option>
+			<option>Louisiana</option>
+			<option>Maine</option>
+			<option>Maryland</option>
+			<option>Massachusetts</option>
+			<option>Michigan</option>
+			<option>Minnesota</option>
+			<option>Mississippi</option>
+			<option>Missouri</option>
+			<option>Montana</option>
+			<option>Nebraska</option>
+			<option>Nevada</option>
+			<option>New Hampshire</option>
+			<option>New Jersey</option>
+			<option>New Mexico</option>
+			<option>New York</option>
+			<option>North Carolina</option>
+			<option>North Dakota</option>
+			<option>Ohio</option>
+			<option>Oklahoma</option>
+			<option>Oregon</option>
+			<option>Pennsylvania</option>
+			<option>Rhode Island</option>
+			<option>South Carolina</option>
+			<option>South Dakota</option>
+			<option>Tennessee</option>
+			<option>Texas</option>
+			<option>Utah</option>
+			<option>Vermont</option>
+			<option>Virginia</option>
+			<option>Washington</option>
+			<option>West Virginia</option>
+			<option>Wisconsin</option>
+			<option>Wyoming</option>
+			</select>
+		</div>
+		<div class="col-md-2">
+			<label for="inputZip" class="form-label">Zip</label>
+			<input type="text" class="form-control" id="inputZip">
+		</div>
+
+		<div class="col-12 text-center">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</form>
+
+    <!-- FOOTER -->
+
+	<footer class="pt-5">
+		<div class="text-center pb-5 pt-5">
+			<h5>BillyBean Restaurants copyrighted 2024</h5>
+		</div>
+	</footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
 </body>
 </html>
